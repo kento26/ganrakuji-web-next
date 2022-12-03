@@ -1,0 +1,14 @@
+$tablet: 1024px;
+$sp: 768px;
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: $sp) {
+    @content;
+  }
+}

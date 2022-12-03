@@ -1,0 +1,40 @@
+@use "./config/reset";
+
+body {
+  background-color: var.$theme-color-white-01;
+}
+
+
+// TODO Swiperのアニメーションをグローバルに宣言しているがコンポーネントに収めたい
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.swiper-slide-active .zoomUpslideImg,
+.swiper-slide-duplicate-active .zoomUpslideImg,
+.swiper-slide-prev .zoomUpslideImg {
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+// TODO 別のファイルに移したい。
+.is-pc {
+  display: block !important;
+
+  @include mixins.sp {
+    display: none !important;
+  }
+}
+
+.is-sp {
+  display: none !important;
+
+  @include mixins.sp {
+    display: block !important;
+  }
+}

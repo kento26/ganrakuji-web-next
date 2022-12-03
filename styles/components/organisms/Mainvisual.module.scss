@@ -1,0 +1,90 @@
+.mainvisual {
+  max-width: 1440px;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+
+  @include mixins.tablet {
+    padding: 50px 20px;
+  }
+
+  @include mixins.sp {
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.swiper_container {
+  display: block;
+  max-width: 554px;
+  width: 50%;
+  height: auto;
+
+  @include mixins.tablet {
+    width: 60%;
+  }
+
+  @include mixins.sp {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.image {
+  display: block;
+  max-width: 554px;
+  width: 100%;
+  height: auto;
+
+  @include mixins.sp {
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+}
+
+.title_container {
+  width: 50%;
+
+  @include mixins.tablet {
+    width: 40%;
+  }
+
+  @include mixins.sp {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+  }
+}
+
+.title {
+  width: 125px;
+  margin: auto;
+
+  @include mixins.sp {
+    position: absolute;
+    top: 59px;
+    right: 8%;
+    width: 23%;
+    height: auto;
+  }
+
+  img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+}

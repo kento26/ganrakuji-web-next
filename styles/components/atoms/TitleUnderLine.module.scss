@@ -1,0 +1,47 @@
+.title {
+  color: var.$theme-color-black-01;
+  letter-spacing: .06em;
+  font-family: var.$font-jp;
+  font-size: 32px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 48px;
+
+  @include mixins.sp {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var.$theme-color-black-01;
+      animation: 2.5s ease-in-out infinite scroll;
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(150%);
+  }
+}

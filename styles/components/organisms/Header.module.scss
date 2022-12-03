@@ -1,0 +1,21 @@
+.container {
+  position: fixed;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 4;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  color: var.$theme-color-black-01;
+  letter-spacing: .06em;
+  font-family: var.$font-jp;
+  font-size: 20px;
+}

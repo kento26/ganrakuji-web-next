@@ -1,0 +1,15 @@
+.container {
+  padding: 60px 20px;
+  max-width: 1140px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+
+  @include mixins.tablet {
+    padding: 40px 20px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}

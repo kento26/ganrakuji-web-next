@@ -1,0 +1,46 @@
+.contact {
+  min-height: 80vh;
+  padding: 120px 20px 50px;
+
+  @include mixins.sp {
+    padding: 80px 20px 40px;
+  }
+
+  &__head,
+  &__body {
+    width: 35%;
+    min-width: 500px;
+    margin: auto;
+
+    @include mixins.sp {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+
+  &__head {
+    text-align: center;
+  }
+
+  &__unit {
+    +.contact__unit {
+      margin-top: 20px;
+    }
+  }
+}
+
+.common_error {
+  margin-bottom: 16px;
+}
+
+.completion_message {
+  font-family: "Noto JP";
+  font-size: 18px;
+  line-height: 1.65;
+  color: var.$theme-color-black-01;
+  text-align: center;
+
+  @include mixins.sp {
+    font-size: 16px;
+  }
+}

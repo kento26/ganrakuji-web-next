@@ -1,0 +1,35 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  padding: 60px 20px;
+
+  @include mixins.sp {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  &__item {
+    width: 50%;
+
+    @include mixins.sp {
+      width: 100%;
+    }
+
+    &.center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.name_text_container {
+  padding-right: 45px;
+
+  @include mixins.sp {
+    padding-right: 0;
+  }
+}

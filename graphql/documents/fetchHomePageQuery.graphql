@@ -1,0 +1,36 @@
+query fetchHomePageQuery {
+  pages {
+    edges {
+      node {
+        commonACF {
+          facilitiesAndEquipment {
+            facilitiesAndEquipmentText
+            facilitiesAndEquipmentTitle
+            facilitiesAndEquipmentImage {
+              sourceUrl(size: LARGE)
+            }
+          }
+          historyText
+          historyImage01 {
+            sourceUrl(size: LARGE)
+          }
+          historyImage02 {
+            sourceUrl(size: LARGE)
+          }
+          introductionName
+          introductionText
+          mainvisualSliderImage {
+            sliderImage {
+              sourceUrl(size: LARGE)
+            }
+          }
+          tombText
+          yogaImage {
+            sourceUrl(size: LARGE)
+          }
+          yogaText
+        }
+      }
+    }
+  }
+}

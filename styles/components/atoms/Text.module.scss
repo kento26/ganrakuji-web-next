@@ -1,0 +1,23 @@
+.text {
+  color: var.$theme-color-black-01;
+  letter-spacing: .03em;
+  line-height: 2;
+  font-family: var.$font-jp;
+  font-size: 14px;
+
+  &.justify {
+    text-align: justify;
+  }
+
+  &.right {
+    text-align: right;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  +.text {
+    margin-top: 16px;
+  }
+}

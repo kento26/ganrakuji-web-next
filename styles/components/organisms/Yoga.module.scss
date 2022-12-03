@@ -1,0 +1,47 @@
+.container {
+  padding: 60px 20px;
+  max-width: 1140px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+
+  @include mixins.tablet {
+    padding: 40px 20px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mixins.sp {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.image {
+  display: block;
+  min-width: 450px;
+  max-width: 600px;
+  width: 100%;
+  margin-left: 56px;
+
+  @include mixins.tablet {
+    margin-left: 24px;
+  }
+
+  @include mixins.sp {
+    min-width: auto;
+    margin: 0 0 16px 0;
+  }
+
+  img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+}
